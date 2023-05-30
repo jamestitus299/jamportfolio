@@ -47,7 +47,7 @@ const Portfolio = () => {
 							</li>
 							<li>
 								<a
-									href="#"
+									href="https://drive.google.com/file/d/14B5r6EMALxpiLdXAxJ14-DUCAjlk129d/view?usp=sharing"   target="_blank"
 									className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
 								>
 									Resume
@@ -93,7 +93,7 @@ const Portfolio = () => {
 				<section className="">
 					<div className="px-10 mt-2 md:px-20 lg:pd-40 text-center">
 						<h3 className="text-3xl py-1 dark:text-white text-center ">
-							Technology I use
+							Technologies I use
 						</h3>
 						<p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
 							I use the below technologies to develop web sites as
@@ -182,7 +182,7 @@ const Portfolio = () => {
 				<section>
 					<div className="px-10 mt-16 mb-6  md:px-20 lg:pd-40 text-center">
 						<h3 className="text-3xl py-1 dark:text-white">
-							Develop for
+							I Develop For
 						</h3>
 					</div>
 
@@ -193,7 +193,7 @@ const Portfolio = () => {
 					</div>
 				</section>
 
-				<section className="">
+				<section className="mb-6">
 					<div className="px-10 mt-16 md:px-20 lg:pd-40 text-center ">
 						<h3 className="text-3xl py-1 dark:text-white ">
 							My Projects
@@ -273,7 +273,6 @@ const Portfolio = () => {
 						
 					</div>
 				</section>
-				<footer>James Titus</footer>
 			</main>
 		</div>
 	);
