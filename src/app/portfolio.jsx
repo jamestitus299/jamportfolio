@@ -259,7 +259,7 @@ const Portfolio = () => {
 						</div>
 
 						<div className="basis-1/3 flex-1 ">
-							<Link href="#">
+							<Link href="https://social-butterfly-navy.vercel.app/" target="_blank">
 								<Image
 									className="rounded-lg object-cover hover:scale-105 transform transition-transform duration-200"
 									width={"100%"}
