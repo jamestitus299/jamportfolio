@@ -193,7 +193,7 @@ const Portfolio = () => {
 					</div>
 				</section>
 
-				<section className="mb-6">
+				<section className="pb-6">
 					<div className="px-10 mt-16 md:px-20 lg:pd-40 text-center ">
 						<h3 className="text-3xl py-1 dark:text-white ">
 							My Projects
