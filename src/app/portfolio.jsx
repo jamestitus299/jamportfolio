@@ -17,12 +17,13 @@ import python from "../../public/python.png";
 import flask from "../../public/flask.png";
 import mongodb from "../../public/mongodb.png";
 import socialbutterflyb from "../../public/socialbutterfly-1.png";
-import socialbutterflyw from "../../public/socialbutterfly-2.png";
 import journal1 from "../../public/journal-1.png";
 import task1 from "../../public/task-1.png";
 import quiz1 from "../../public/quiz-1.png";
 import estate from "../../public/estate.png";
 import weather from "../../public/weather-2.png";
+import firebase from "../../public/firebase.svg";
+import foodsaver from "../../public/foodsaver.png";
 import { React, useState } from "react";
 
 const Portfolio = () => {
@@ -45,14 +46,14 @@ const Portfolio = () => {
 									}}
 								/>
 							</li>
-							<li>
+							{/* <li>
 								<a
-									href="https://drive.google.com/file/d/14B5r6EMALxpiLdXAxJ14-DUCAjlk129d/view?usp=sharing"   target="_blank"
+									href="#"
 									className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
 								>
 									Resume
 								</a>
-							</li>
+							</li> */}
 						</ul>
 					</nav>
 
@@ -61,12 +62,13 @@ const Portfolio = () => {
 							James Titus
 						</h2>
 						<h3 className="text-sm py-2  text-center md:text-3xl dark:text-gray-200 ">
-							Web developer | Software Engineer
+							Software Engineer | Web Developer | Data Analyst
 						</h3>
 						<p className="text-xl py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-300">
 							Love to code and help develop
 							<span className="text-teal-500"> web sites </span>
-							that power your business your way
+							that power your business your way, with the power of 
+							<span className="text-teal-500"> Data </span>
 						</p>
 					</div>
 
@@ -93,7 +95,7 @@ const Portfolio = () => {
 				<section className="">
 					<div className="px-10 mt-2 md:px-20 lg:pd-40 text-center">
 						<h3 className="text-3xl py-1 dark:text-white text-center ">
-							Technologies I use
+							Technology I use
 						</h3>
 						<p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
 							I use the below technologies to develop web sites as
@@ -101,7 +103,7 @@ const Portfolio = () => {
 								{" "}
 								awesome{" "}
 							</span>{" "}
-							and and 
+							and 
 							<span className="text-teal-500">
 								{" "}
 								flexible{" "}
@@ -177,12 +179,24 @@ const Portfolio = () => {
 								MongoDB
 							</h3>
 						</div>
-					</div>
+
+						<div className="text-center shadow-lg p-10 rounded-xl my-5 max-w-sm hover:scale-105 transform transition-transform duration-300 bg-gray-900 text-white dark:bg-white flex-1  w-full sm:w-1/2 md:w-1/4">
+							<Image
+								src={firebase}
+								width={100}
+								height={100}
+								className="mx-auto"
+							/>
+							<h3 className="text-lg font-medium pt-8 pb-2  mt-2 text-teal-600">
+								FireBase
+							</h3>
+						</div>
+					</div>	
 				</section>
-				<section>
+				{/* <section>
 					<div className="px-10 mt-16 mb-6  md:px-20 lg:pd-40 text-center">
 						<h3 className="text-3xl py-1 dark:text-white">
-							I Develop For
+							Develop for
 						</h3>
 					</div>
 
@@ -191,9 +205,9 @@ const Portfolio = () => {
 						<BsAndroid2 className="text-5xl text-gray-900 dark:text-gray-200" />
 						<BsApple className="text-5xl text-gray-900 dark:text-gray-200" />
 					</div>
-				</section>
+				</section> */}
 
-				<section className="pb-6">
+				<section className="">
 					<div className="px-10 mt-16 md:px-20 lg:pd-40 text-center ">
 						<h3 className="text-3xl py-1 dark:text-white ">
 							My Projects
@@ -258,8 +272,8 @@ const Portfolio = () => {
 							</Link>
 						</div>
 
-						<div className="basis-1/3 flex-1 ">
-							<Link href="https://social-butterfly-navy.vercel.app/" target="_blank">
+						{/* <div className="basis-1/3 flex-1 ">
+							<Link href="#">
 								<Image
 									className="rounded-lg object-cover hover:scale-105 transform transition-transform duration-200"
 									width={"100%"}
@@ -267,15 +281,26 @@ const Portfolio = () => {
 									src={socialbutterflyb}
 								/>
 							</Link>
-						</div>
+						</div> */}
 
+						<div className="basis-1/3 flex-1 ">
+							<Link href="https://kifoodsaver.com/" target="_blank">
+								<Image
+									className="rounded-lg object-cover hover:scale-105 transform transition-transform duration-200"
+									width={"100%"}
+									height={"100%"}
+									src={foodsaver}
+								/>
+							</Link>
+						</div>
 						
 						
 					</div>
 				</section>
+				<footer>James Titus</footer>
 			</main>
 		</div>
 	);
-};
+};	
 
 export default Portfolio;
