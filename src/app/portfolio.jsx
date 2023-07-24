@@ -25,6 +25,7 @@ import weather from "../../public/weather-2.png";
 import firebase from "../../public/firebase.svg";
 import foodsaver from "../../public/foodsaver.png";
 import { React, useState } from "react";
+import ContactForm from "./ContactForm";
 
 const Portfolio = () => {
 	const [darkMode, setDarkMode] = useState(true);
@@ -34,7 +35,7 @@ const Portfolio = () => {
 			<main className="  bg-gray-200  px-10 md:px-20 lg:pd-40 dark:bg-gray-900">
 				<section className="min-h-screen">
 					<nav className="py-10 mb-12 flex justify-between">
-						<hi className="text-xl font-burtons dark:text-teal-600 ">
+						<hi className="text-xl font-burtons dark:text-teal-600">
 							James
 						</hi>
 						<ul className="flex items-center">
@@ -46,14 +47,33 @@ const Portfolio = () => {
 									}}
 								/>
 							</li>
-							{/* <li>
+							<li>
 								<a
-									href="#"
+									href="#projects"
+									// target="_blank"
+									className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+								>
+									Projects
+								</a>
+							</li>
+							<li>
+								<a
+									href="#contact"
+									// target="_blank"
+									className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+								>
+									Contact
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://drive.google.com/file/d/1V5PEa43ct9mdF1YhTWsRV8OkgwUNlcCj/view?usp=sharing"
+									target="_blank"
 									className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
 								>
 									Resume
 								</a>
-							</li> */}
+							</li>
 						</ul>
 					</nav>
 
@@ -207,7 +227,7 @@ const Portfolio = () => {
 					</div>
 				</section> */}
 
-				<section className="">
+				<section className="" id="projects">
 					<div className="px-10 mt-16 md:px-20 lg:pd-40 text-center ">
 						<h3 className="text-3xl py-1 dark:text-white ">
 							My Projects
@@ -297,7 +317,16 @@ const Portfolio = () => {
 						
 					</div>
 				</section>
-				<footer>James Titus</footer>
+				<section className="p-12" id="contact">
+					<div className="px-10 mt-12  md:px-20 lg:pd-40 text-center">
+						<h3 className="text-4xl py-1 dark:text-teal-600 text-center ">
+							Contact me
+						</h3>
+					</div>
+					<div className="px-10 mt-8 ">
+						<ContactForm />
+					</div>
+				</section>
 			</main>
 		</div>
 	);
