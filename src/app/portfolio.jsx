@@ -74,7 +74,7 @@ const Portfolio = () => {
               Projects
             </a>
           </li>
-          <li>
+          {/* <li>
             <a
               href="#contact"
               // target="_blank"
@@ -82,7 +82,7 @@ const Portfolio = () => {
             >
               Contact
             </a>
-          </li>
+          </li> */}
           <li>
             <a
               href="https://drive.google.com/file/d/1V5PEa43ct9mdF1YhTWsRV8OkgwUNlcCj/view?usp=sharing"
@@ -124,7 +124,7 @@ const Portfolio = () => {
               <Image src={deved} alt="Deved Image" />
             </div>
           </section>
-          <section className="">
+          <section className="mt-12">
             <div className="px-10 mt-2 md:px-20 lg:pd-40 text-center">
               <h3 className="text-3xl py-1 dark:text-white text-center ">
                 Technology I use
@@ -312,7 +312,7 @@ const Portfolio = () => {
               </div>
             </div>
           </section>
-          <section className="p-12 mt-8" id="contact">
+          {/* <section className="p-12 mt-8" id="contact">
             <div className="px-10 mt-12  md:px-20 lg:pd-40 text-center">
               <h3 className="text-4xl py-1 text-teal-600 text-center ">
                 Contact me
@@ -321,7 +321,7 @@ const Portfolio = () => {
             <div className="px-10 mt-8 ">
               <ContactForm />
             </div>
-          </section>
+          </section> */}
         </main>
       </div>
     </div>
