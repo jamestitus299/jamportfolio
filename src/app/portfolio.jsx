@@ -17,7 +17,9 @@ import js from "../../public/js.png";
 import python from "../../public/python.png";
 import flask from "../../public/flask.png";
 import mongodb from "../../public/mongodb.png";
-import journal1 from "../../public/journal-1.png";
+import php from "../../public/icons8-php-logo-160.svg"
+import wordpress from "../../public/icons8-wordpress-480.svg"
+import journal1 from "../../public/jamjournal.png";
 import task1 from "../../public/task-1.png";
 import quiz1 from "../../public/quiz-1.png";
 import estate from "../../public/estate.png";
@@ -26,13 +28,15 @@ import firebase from "../../public/firebase.svg";
 import foodsaver from "../../public/foodsaver.png";
 import { React, useState } from "react";
 import ContactForm from "./ContactForm";
+import navBar from "./navBar";
 
 const Portfolio = () => {
   const [darkMode, setDarkMode] = useState(true);
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <nav className="p-5 flex justify-between flex-wrap fixed top-0 w-full z-10 bg-gray-200 dark:bg-gray-900 ">
+
+<nav className="p-5 flex justify-between flex-wrap fixed top-0 w-full z-10 bg-gray-200 dark:bg-gray-900 ">
         <div className="text-3xl flex justify-center gap-10 py-2 text-gray-600">
           <hi className="text-xl font-burtons text-teal-600 ">James</hi>
           <Link
@@ -85,7 +89,7 @@ const Portfolio = () => {
           </li> */}
           <li>
             <a
-              href="https://drive.google.com/file/d/1V5PEa43ct9mdF1YhTWsRV8OkgwUNlcCj/view?usp=sharing"
+              href="https://drive.google.com/file/d/1W7AA1HWfRWqOEFpCHU6LMngRCW9JwOFg/view?usp=sharing"
               target="_blank"
               className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
             >
@@ -106,10 +110,11 @@ const Portfolio = () => {
                 Software Engineer | Web Developer | Data Analyst
               </h3>
               <p className="text-xl py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-300">
-                Love to code and help develop
-                <span className="text-teal-500"> web sites </span>
-                that power your business your way, with the power of
-                <span className="text-teal-500"> Data </span>
+                Love to
+                <span className="text-teal-500"> code </span> and help develop
+                <span className="text-teal-500"> web sites </span> that power your business your way
+                {/* , with the power of
+                <span className="text-teal-500"> Data </span> */}
               </p>
             </div>
 
@@ -124,31 +129,34 @@ const Portfolio = () => {
               <Image src={deved} alt="Deved Image" />
             </div>
           </section>
+
           <section className="mt-12">
             <div className="px-10 mt-2 md:px-20 lg:pd-40 text-center">
               <h3 className="text-3xl py-1 dark:text-white text-center ">
                 Technology I use
               </h3>
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                I use the below technologies to develop web sites as
+                I use the below technologies to develop web sites, as
                 <span className="text-teal-500"> awesome </span> and
                 <span className="text-teal-500"> flexible </span> as you require
               </p>
             </div>
+
             <div className="flex flex-wrap gap-2 text-sm">
+
               <div className="text-center shadow-lg p-10 rounded-xl my-5 max-w-sm hover:scale-105 transform transition-transform duration-300 bg-gray-900 w-100 text-white dark:bg-white flex-1  w-full sm:w-1/2 md:w-1/4 ">
                 <Image
                   src={reactimg}
                   alt="React Img"
                   width={100}
                   height={100}
-                  className="mx-auto"
+                  className="mx-auto mt-4"
                 />
                 <h3 className="text-lg font-medium pt-8 pb-2  text-teal-600">
-                  React JS
+                  React
                 </h3>
               </div>
-              <div className=" text-center shadow-lg p-10 rounded-xl my-5 max-w-sm hover:scale-105 transform transition-transform duration-300 bg-gray-900 text-white dark:bg-white flex-1  w-full sm:w-1/2 md:w-1/4">
+              {/* <div className=" text-center shadow-lg p-10 rounded-xl my-5 max-w-sm hover:scale-105 transform transition-transform duration-300 bg-gray-900 text-white dark:bg-white flex-1  w-full sm:w-1/2 md:w-1/4">
                 <Image
                   src={tailwindimg}
                   alt="Tailwind Image"
@@ -159,7 +167,7 @@ const Portfolio = () => {
                 <h3 className="text-lg font-medium pt-8 pb-2 text-teal-600">
                   Tailwind css
                 </h3>
-              </div>
+              </div> */}
               <div className="text-center shadow-lg p-10 rounded-xl my-5 max-w-sm hover:scale-105 transform transition-transform duration-300 bg-gray-900 text-white dark:bg-white flex-1  w-full sm:w-1/2 md:w-1/4">
                 <Image
                   src={js}
@@ -172,16 +180,30 @@ const Portfolio = () => {
                   Javascript
                 </h3>
               </div>
+
               <div className="text-center shadow-lg p-10 rounded-xl my-5 max-w-sm hover:scale-105 transform transition-transform duration-300 bg-gray-900 text-white dark:bg-white flex-1  w-full sm:w-1/2 md:w-1/4">
                 <Image
                   src={python}
                   alt="Python Image"
                   width={100}
                   height={100}
-                  className="mx-auto"
+                  className="mx-auto mt-5"
                 />
                 <h3 className="text-lg font-medium pt-8 pb-2 text-teal-600">
                   Python
+                </h3>
+              </div>
+
+              <div className="text-center shadow-lg p-10 rounded-xl my-5 max-w-sm hover:scale-105 transform transition-transform duration-300 bg-gray-900 text-white dark:bg-white flex-1  w-full sm:w-1/2 md:w-1/4">
+                <Image
+                  src={php}
+                  alt="php Image"
+                  width={100}
+                  height={100}
+                  className="mx-auto mt-5"
+                />
+                <h3 className="text-lg font-medium pt-8 pb-2 text-teal-600">
+                  PHP
                 </h3>
               </div>
 
@@ -191,10 +213,23 @@ const Portfolio = () => {
                   alt="Flask Image"
                   width={100}
                   height={100}
-                  className="mx-auto"
+                  className="mx-auto mt-5"
                 />
                 <h3 className="text-lg font-medium pt-8 pb-2  mt-2 text-teal-600">
                   Flask
+                </h3>
+              </div>
+
+              <div className="text-center shadow-lg p-10 rounded-xl my-5 max-w-sm hover:scale-105 transform transition-transform duration-300 bg-gray-900 text-white dark:bg-white flex-1  w-full sm:w-1/2 md:w-1/4">
+                <Image
+                  src={wordpress}
+                  alt="Wordpress Image"
+                  width={100}
+                  height={100}
+                  className="mx-auto mt-0"
+                />
+                <h3 className="text-lg font-medium pt-8 pb-2  mt-2 text-teal-600">
+                  Wordpress
                 </h3>
               </div>
 
@@ -217,7 +252,7 @@ const Portfolio = () => {
                   alt="FireBase Image"
                   width={100}
                   height={100}
-                  className="mx-auto"
+                  className="mx-auto mt-3"
                 />
                 <h3 className="text-lg font-medium pt-8 pb-2  mt-2 text-teal-600" >
                   FireBase
@@ -234,6 +269,19 @@ const Portfolio = () => {
               </p>
             </div>
             <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+              
+              <div className="basis-1/3 flex-1 ">
+                <Link href="https://food-saver.netlify.app/" target="_blank">
+                  <Image
+                    className="rounded-lg object-cover hover:scale-105 transform transition-transform duration-200"
+                    width={"100%"}
+                    height={"100%"}
+                    src={foodsaver}
+                    alt="Image"
+                  />
+                </Link>
+              </div>
+
               <div className="basis-1/3 flex-1 ">
                 <a href="https://estate-dev.vercel.app/" target="_blank">
                   <Image
@@ -245,41 +293,7 @@ const Portfolio = () => {
                   />
                 </a>
               </div>
-              <div className="basis-1/3 flex-1 ">
-                <Link href="https://kifoodsaver.com/" target="_blank">
-                  <Image
-                    className="rounded-lg object-cover hover:scale-105 transform transition-transform duration-200"
-                    width={"100%"}
-                    height={"100%"}
-                    src={foodsaver}
-                    alt="Image"
-                  />
-                </Link>
-              </div>
 
-              <div className="basis-1/3 flex-1">
-                <a href="https://quizapi-a6ra.onrender.com/" target="_blank">
-                  <Image
-                    className="rounded-lg object-cover hover:scale-105 transform transition-transform duration-200"
-                    width={"100%"}
-                    height={"100%"}
-                    src={quiz1}
-                    alt=" Image"
-                  />
-                </a>
-              </div>
-
-              <div className="basis-1/3 flex-1 ">
-                <a href="https://jamjournal.onrender.com" target="_blank">
-                  <Image
-                    className="rounded-lg object-cover hover:scale-105 transform transition-transform duration-200"
-                    width={""}
-                    height={""}
-                    src={journal1}
-                    alt=" Image"
-                  />
-                </a>
-              </div>
 
               <div className="basis-1/3 flex-1 ">
                 <Link
@@ -310,6 +324,30 @@ const Portfolio = () => {
                   />
                 </a>
               </div>
+
+              <div className="basis-1/3 flex-1">
+                <a href="https://quizapi-a6ra.onrender.com/" target="_blank">
+                  <Image
+                    className="rounded-lg object-cover hover:scale-105 transform transition-transform duration-200"
+                    width={"100%"}
+                    height={"100%"}
+                    src={quiz1}
+                    alt=" Image"
+                  />
+                </a>
+              </div>
+
+              <div className="basis-1/3 flex-1 ">
+                <a href="https://jamjournal.onrender.com" target="_blank">
+                  <Image
+                    className="rounded-lg object-cover hover:scale-105 transform transition-transform duration-200"
+                    // width={"10%"}
+                    // height={"10%"}
+                    src={journal1}
+                    alt=" Image"
+                  />
+                </a>
+              </div>
             </div>
           </section>
           {/* <section className="p-12 mt-8" id="contact">
@@ -329,3 +367,7 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
+
+
+
