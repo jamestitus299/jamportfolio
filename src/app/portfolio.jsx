@@ -26,6 +26,8 @@ import estate from "../../public/estate.png";
 import weather from "../../public/weather-2.png";
 import firebase from "../../public/firebase.svg";
 import foodsaver from "../../public/foodsaver.png";
+import buyurcycle from "../../public/buyurcycle.png";
+import socialbutterfly from "../../public/socialbutterfly-2.png"
 import { React, useState } from "react";
 import ContactForm from "./ContactForm";
 import navBar from "./navBar";
@@ -338,6 +340,18 @@ const Portfolio = () => {
               </div>
 
               <div className="basis-1/3 flex-1 ">
+                <a href="https://buyurcycle.wordpress.com/" target="_blank">
+                  <Image
+                    className="rounded-lg object-cover hover:scale-105 transform transition-transform duration-200"
+                    // width={"10%"}
+                    // height={"10%"}
+                    src={buyurcycle}
+                    alt=" Image"
+                  />
+                </a>
+              </div>
+
+              <div className="basis-1/3 flex-1 ">
                 <a href="https://jamjournal.onrender.com" target="_blank">
                   <Image
                     className="rounded-lg object-cover hover:scale-105 transform transition-transform duration-200"
@@ -348,6 +362,19 @@ const Portfolio = () => {
                   />
                 </a>
               </div>
+
+              <div className="basis-1/3 flex-1 ">
+                <a href="https://social-butterfly-navy.vercel.app/" target="_blank">
+                  <Image
+                    className="rounded-lg object-cover hover:scale-105 transform transition-transform duration-200"
+                    // width={"10%"}
+                    // height={"10%"}
+                    src={socialbutterfly}
+                    alt=" Image"
+                  />
+                </a>
+              </div>
+
             </div>
           </section>
           {/* <section className="p-12 mt-8" id="contact">
