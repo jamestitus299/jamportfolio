@@ -4,9 +4,6 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
   AiFillLinkedin,
   AiFillGithub,
-  AiFillTwitterCircle,
-  AiFillInstagram,
-  AiFillFacebook,
 } from "react-icons/ai";
 import Image from "next/image";
 import Link from "next/link";
@@ -27,10 +24,11 @@ import weather from "../../public/weather-2.png";
 import firebase from "../../public/firebase.svg";
 import foodsaver from "../../public/foodsaver.png";
 import buyurcycle from "../../public/buyurcycle.png";
-import socialbutterfly from "../../public/socialbutterfly-2.png"
+import socialbutterfly from "../../public/socialbutterfly-2.png";
+import java from "../../public/java.png";
 import { React, useState } from "react";
 import ContactForm from "./ContactForm";
-import navBar from "./navBar";
+// import navBar from "./navBar";
 
 const Portfolio = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -109,12 +107,15 @@ const Portfolio = () => {
                 James Titus
               </h2>
               <h3 className="text-sm py-2  text-center md:text-3xl dark:text-gray-200 ">
-                Software Engineer | Web Developer | Data Analyst
+                Software Engineer
               </h3>
               <p className="text-xl py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-300">
                 Love to
                 <span className="text-teal-500"> code </span> and help develop
-                <span className="text-teal-500"> web sites </span> that power your business your way
+                <span className="text-teal-500"> Software </span> 
+                and
+                <span className="text-teal-500"> Web Sites </span> 
+                that power your business your way
                 {/* , with the power of
                 <span className="text-teal-500"> Data </span> */}
               </p>
@@ -138,9 +139,8 @@ const Portfolio = () => {
                 Technology I use
               </h3>
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                I use the below technologies to develop web sites, as
-                <span className="text-teal-500"> awesome </span> and
-                <span className="text-teal-500"> flexible </span> as you require
+                I use the below technologies to develop
+                <span className="text-teal-500"> Software </span> 
               </p>
             </div>
 
@@ -158,18 +158,18 @@ const Portfolio = () => {
                   React
                 </h3>
               </div>
-              {/* <div className=" text-center shadow-lg p-10 rounded-xl my-5 max-w-sm hover:scale-105 transform transition-transform duration-300 bg-gray-900 text-white dark:bg-white flex-1  w-full sm:w-1/2 md:w-1/4">
+              <div className=" text-center shadow-lg p-10 rounded-xl my-5 max-w-sm hover:scale-105 transform transition-transform duration-300 bg-gray-900 text-white dark:bg-white flex-1  w-full sm:w-1/2 md:w-1/4">
                 <Image
-                  src={tailwindimg}
+                  src={java}
                   alt="Tailwind Image"
                   width={100}
                   height={100}
                   className="mx-auto mt-5"
                 />
                 <h3 className="text-lg font-medium pt-8 pb-2 text-teal-600">
-                  Tailwind css
+                  Java
                 </h3>
-              </div> */}
+              </div>
               <div className="text-center shadow-lg p-10 rounded-xl my-5 max-w-sm hover:scale-105 transform transition-transform duration-300 bg-gray-900 text-white dark:bg-white flex-1  w-full sm:w-1/2 md:w-1/4">
                 <Image
                   src={js}
@@ -178,7 +178,7 @@ const Portfolio = () => {
                   height={100}
                   className="mx-auto"
                 />
-                <h3 className="text-lg font-medium pt-8 pb-2 text-teal-600">
+                <h3 className="text-lg font-medium pt-8 pb-2 text-teal-600 my-5">
                   Javascript
                 </h3>
               </div>
@@ -196,7 +196,7 @@ const Portfolio = () => {
                 </h3>
               </div>
 
-              <div className="text-center shadow-lg p-10 rounded-xl my-5 max-w-sm hover:scale-105 transform transition-transform duration-300 bg-gray-900 text-white dark:bg-white flex-1  w-full sm:w-1/2 md:w-1/4">
+              {/* <div className="text-center shadow-lg p-10 rounded-xl my-5 max-w-sm hover:scale-105 transform transition-transform duration-300 bg-gray-900 text-white dark:bg-white flex-1  w-full sm:w-1/2 md:w-1/4">
                 <Image
                   src={php}
                   alt="php Image"
@@ -207,7 +207,7 @@ const Portfolio = () => {
                 <h3 className="text-lg font-medium pt-8 pb-2 text-teal-600">
                   PHP
                 </h3>
-              </div>
+              </div> */}
 
               <div className="text-center shadow-lg p-10 rounded-xl my-5 max-w-sm hover:scale-105 transform transition-transform duration-300 bg-gray-900 text-white dark:bg-white flex-1  w-full sm:w-1/2 md:w-1/4">
                 <Image
@@ -380,7 +380,7 @@ const Portfolio = () => {
           {/* <section className="p-12 mt-8" id="contact">
             <div className="px-10 mt-12  md:px-20 lg:pd-40 text-center">
               <h3 className="text-4xl py-1 text-teal-600 text-center ">
-                Contact me
+                Contact Me
               </h3>
             </div>
             <div className="px-10 mt-8 ">

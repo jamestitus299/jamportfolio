@@ -8,18 +8,19 @@ const validationSchema = Yup.object().shape({
 	email: Yup.string().email("Invalid email").required("Email is required"),
 	message: Yup.string()
 		.required("Message is required")
-		.min(25, "Message should be atleast 25 chharacters long"),
+		.min(25, "Message should be atleast 25 characters long"),
 });
 
 const ContactForm = () => {
+	var service_id = "service_he9wjde";
+    // var template_id = "your_template_id";
 	const subject = "Regarding your services";
 	const toEmail = "jamestitus299@gmail.com";
 
 	const sendMail = async (values) => {
     const { name, email, message } = values;
-		alert(name + email + message);
-
-		await emailjs.send({
+		// alert(name + email + message);
+		await emailjs.send(service_id, {
 			to: toEmail,
 			from: email,
 			subject: subject,
@@ -34,7 +35,6 @@ const ContactForm = () => {
 		notification.onclick = () => {
 			notification.close();
 		};
-
 	};
 
 	return (
