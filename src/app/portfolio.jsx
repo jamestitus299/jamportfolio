@@ -89,7 +89,7 @@ const Portfolio = () => {
           </li> */}
           <li>
             <a
-              href="https://drive.google.com/file/d/132n2MB-16AlZkyEhHKHyjEjDg5O6fA5M/view?usp=sharing"
+              href="https://drive.google.com/file/d/1PnnSJiLQuQ396I2l4Mf6kRhtqxQmvr6a/view?usp=drive_link"
               target="_blank"
               className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
             >
