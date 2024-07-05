@@ -6,7 +6,7 @@ const navBar = () => {
         <div className="text-3xl flex justify-center gap-10 py-2 text-gray-600">
           <hi className="text-xl font-burtons text-teal-600 ">James</hi>
           <Link
-            href="https://www.linkedin.com/in/james-titus-0a94b621a/"
+            href="https://www.linkedin.com/in/jamestitus299/"
             target="_blank"
           >
             <AiFillLinkedin className="dark:text-gray-100" />
